@@ -1,0 +1,65 @@
+.payment-container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    margin: 50px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h1, 
+.payment-container h2 {
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    margin: 20px 0;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#order-summary h3, #order-summary p {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 18px;
+    display: block;
+    margin: 10px 0;
+}
+
+form input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkorange;
+}

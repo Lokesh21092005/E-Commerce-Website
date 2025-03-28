@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - MyStore</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment.css">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🛒 AccessorizeMe</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+        </ul>
+    </nav>
+
+    <div class="payment-container">
+        <h1>Checkout</h1>
+
+        <div id="order-summary">
+            <h3>Total Items: <span id="cart-count">0</span></h3>
+            <h3>Total Price: $<span id="cart-total">0</span></h3>
+        </div>
+
+        
+        <div id="cart-items"></div>
+
+        
+        <h2>Shipping Address</h2>
+        <form id="address-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="address" placeholder="Full Address" required>
+            <input type="text" id="city" placeholder="City" required>
+            <input type="text" id="pincode" placeholder="PIN Code" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+        </form>
+
+        <h2>Payment Details</h2>
+        <form id="payment-form">
+            <label>
+                <input type="radio" name="payment-method" value="credit-card" required> Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="upi" required> UPI Payment
+            </label>
+
+            <div id="credit-card-fields" style="display: none;">
+                <input type="text" id="card-number" placeholder="Card Number" required>
+                <input type="text" id="expiry-date" placeholder="Expiry Date (MM/YY)" required>
+                <input type="text" id="cvv" placeholder="CVV" required>
+            </div>
+
+            <div id="upi-fields" style="display: none;">
+                <input type="text" id="upi-id" placeholder="Enter UPI ID (example@upi)" required>
+            </div>
+
+            <button type="submit">Complete Payment</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
